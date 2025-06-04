@@ -38,7 +38,7 @@ $terms = get_terms([
                     <div class="card__content">
                         <?php return_date_status($date); ?>
                         <h3 class="card__title"><?= $title . ' ' . __hepl('du') . ' ' . date_i18n('d F Y', $date); ?></h3>
-                        <p class="card__description"><?= get_field('description') ?></p>
+                        <p class="card__description"><?= get_the_excerpt() ?></p>
                     </div>
                 </article>
             <?php
