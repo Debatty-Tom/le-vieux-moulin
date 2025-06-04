@@ -17,7 +17,7 @@ if (have_posts()): while (have_posts()): the_post(); ?>
             </div>
         </article>
     </section>
-
+    <?php include('templates/content/flexible.php') ?>
 <?php
 endwhile;
 else: ?>
