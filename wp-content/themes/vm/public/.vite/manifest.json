@@ -1,0 +1,97 @@
+{
+  "wp-content/themes/vm/resources/fonts/Chewy-Regular.ttf": {
+    "file": "assets/Chewy-Regular-DY_Ehv2E.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Chewy-Regular.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/LuckiestGuy-Regular.ttf": {
+    "file": "assets/LuckiestGuy-Regular-D4vvJGjA.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/LuckiestGuy-Regular.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-Black.ttf": {
+    "file": "assets/Poppins-Black-yHqY0KRU.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-Black.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-BlackItalic.ttf": {
+    "file": "assets/Poppins-BlackItalic-cm4Pcmzs.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-BlackItalic.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-Bold.ttf": {
+    "file": "assets/Poppins-Bold-qTAUjFF7.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-Bold.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-BoldItalic.ttf": {
+    "file": "assets/Poppins-BoldItalic-DRcRqYlu.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-BoldItalic.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-ExtraBold.ttf": {
+    "file": "assets/Poppins-ExtraBold-W_qeO1XX.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-ExtraBold.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-ExtraBoldItalic.ttf": {
+    "file": "assets/Poppins-ExtraBoldItalic-C9zKPiZo.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-ExtraBoldItalic.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-ExtraLight.ttf": {
+    "file": "assets/Poppins-ExtraLight-u2IJXg5c.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-ExtraLight.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-ExtraLightItalic.ttf": {
+    "file": "assets/Poppins-ExtraLightItalic-DV_5Lr0Z.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-ExtraLightItalic.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-Italic.ttf": {
+    "file": "assets/Poppins-Italic-PjgN8SAi.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-Italic.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-Light.ttf": {
+    "file": "assets/Poppins-Light-DT6-CsId.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-Light.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-LightItalic.ttf": {
+    "file": "assets/Poppins-LightItalic-CDXp65eX.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-LightItalic.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-Medium.ttf": {
+    "file": "assets/Poppins-Medium-Cxde2ZoM.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-Medium.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-MediumItalic.ttf": {
+    "file": "assets/Poppins-MediumItalic-C6e40Oak.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-MediumItalic.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-Regular.ttf": {
+    "file": "assets/Poppins-Regular-CTKNfV9P.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-Regular.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-SemiBold.ttf": {
+    "file": "assets/Poppins-SemiBold-B_fPDAUb.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-SemiBold.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-SemiBoldItalic.ttf": {
+    "file": "assets/Poppins-SemiBoldItalic-1z_hA9Cm.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-SemiBoldItalic.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-Thin.ttf": {
+    "file": "assets/Poppins-Thin-leD9T1nx.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-Thin.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/Poppins-ThinItalic.ttf": {
+    "file": "assets/Poppins-ThinItalic-DeF98U39.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/Poppins-ThinItalic.ttf"
+  },
+  "wp-content/themes/vm/resources/fonts/icomoon.ttf": {
+    "file": "assets/icomoon-CLi_Lp0m.ttf",
+    "src": "wp-content/themes/vm/resources/fonts/icomoon.ttf"
+  },
+  "wp-content/themes/vm/resources/js/main.js": {
+    "file": "assets/js-JCq5_wKM.js",
+    "name": "js",
+    "src": "wp-content/themes/vm/resources/js/main.js",
+    "isEntry": true
+  },
+  "wp-content/themes/vm/resources/scss/main.scss": {
+    "file": "assets/css-CDqwmK0t.css",
+    "src": "wp-content/themes/vm/resources/scss/main.scss",
+    "isEntry": true
+  }
+}
