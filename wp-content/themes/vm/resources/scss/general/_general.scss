@@ -4,6 +4,7 @@
 
 
 body {
+  font-family: Poppins, sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -33,6 +34,7 @@ main {
   }
 
   &__title {
+    font-family: chewy, Poppins, sans-serif;
     font-size: font-size.$main-text-title-size;
     color: color.$text-color-secondary;
     font-weight: bold;
