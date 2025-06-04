@@ -3,8 +3,9 @@
 <?php $subline = get_sub_field('subline') ?>
 <?php $text = get_sub_field('text') ?>
 <?php $section_id = dw_get_section_id($headline) ?>
+<?php $media_position = get_sub_field('gallery_position') ?>
 
-<section class="text-media"
+<section class="text-media <?php if ($media_position === 'center'): echo 'text-media__center'; endif; ?>"
     <?php if (!empty($section_id)): ?>
         id="<?= esc_attr($section_id) ?>"
     <?php endif; ?>>

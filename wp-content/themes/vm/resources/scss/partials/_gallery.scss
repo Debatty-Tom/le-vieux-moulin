@@ -1,54 +1,89 @@
-.gallery {
-  padding-top: 3rem;
-  padding-bottom: 0;
+@use '../settings/breakpoints' as breakpoints;
+@use '../settings/colors' as color;
+@use '../settings/font-sizes' as font-sizes;
 
+.gallery {
   &__container {
-    display: grid;
-    gap: 1rem;
-    align-content: center;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+      .text-gallery__arrows {
+        opacity: 1;
+      }
+    }
   }
 
   &__link {
+    &:first-child {
+      position: relative;
+      z-index: 1;
+    }
+
+    &:nth-child(n+2) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__img{
     width: 100%;
-    transition: .3s;
-
-    &:hover {
-      filter: brightness(70%);
-    }
+    height: 100%;
   }
 
-  &__img {
-    display: block;
-    object-fit: cover;
-    object-position: top;
-    width: 100%;
-    height: auto;
-    max-height: 20rem;
-    min-height: 20rem;
-    border-radius: 8px;
-  }
 }
 
-@media screen and (min-width: 768px) {
-  .gallery {
-    padding-top: 5rem;
-
-    &__container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .gallery {
-    padding-top: 7rem;
-
-    &__title {
-      font-size: 52px;
-    }
-
-    &__container {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-}
+//.gallery {
+//  padding-top: 3rem;
+//  padding-bottom: 0;
+//
+//  &__container {
+//    display: grid;
+//    gap: 1rem;
+//    align-content: center;
+//  }
+//
+//  &__link {
+//    width: 100%;
+//    transition: .3s;
+//
+//    &:hover {
+//      filter: brightness(70%);
+//    }
+//  }
+//
+//  &__img {
+//    display: block;
+//    object-fit: cover;
+//    object-position: top;
+//    width: 100%;
+//    height: auto;
+//    max-height: 20rem;
+//    min-height: 20rem;
+//    border-radius: 8px;
+//  }
+//}
+//
+//@media screen and (min-width: 768px) {
+//  .gallery {
+//    padding-top: 5rem;
+//
+//    &__container {
+//      grid-template-columns: repeat(2, 1fr);
+//    }
+//  }
+//}
+//
+//@media screen and (min-width: 1024px) {
+//  .gallery {
+//    padding-top: 7rem;
+//
+//    &__title {
+//      font-size: 52px;
+//    }
+//
+//    &__container {
+//      grid-template-columns: repeat(3, 1fr);
+//    }
+//  }
+//}
