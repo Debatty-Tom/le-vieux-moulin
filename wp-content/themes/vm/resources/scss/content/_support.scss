@@ -1,0 +1,27 @@
+@use '../settings/breakpoints' as breakpoints;
+@use '../settings/colors' as color;
+@use '../settings/font-sizes' as font-sizes;
+
+.support {
+  &__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: color.$text-color-secondary;
+    text-align: center;
+    line-height: 1.2;
+    margin: auto;
+  }
+
+  &__content {
+    font-size: font-sizes.$main-text-size;
+    line-height: 1.4;
+    color: color.$text-color-secondary;
+    max-width: 60%;
+    text-align: center;
+  }
+}
