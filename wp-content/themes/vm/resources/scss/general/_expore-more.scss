@@ -1,0 +1,61 @@
+@use '../settings/colors' as color;
+@use '../settings/font-sizes' as font-size;
+@use '../settings/breakpoints' as breakpoints;
+
+.explore__container {
+  padding: 5rem 2rem;
+  text-align: center;
+
+  .explore__title {
+    font-size: font-size.$main-text-title-size;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: color.$text-color-primary;
+  }
+
+  .explore__content {
+    font-size: font-size.$small-text-size;
+    color: color.$text-color-primary;
+    max-width: 60ch;
+    margin: 0 auto 1rem auto;
+    line-height: 1.6;
+  }
+
+  .explore__links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .explore__link {
+      background-color: white;
+      border-radius: 1rem;
+      padding: 0.75rem 1.5rem;
+      color: color.$text-color-primary;
+      font-weight: 500;
+      text-decoration: none;
+      border: 1px solid transparent;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+
+      &:hover {
+        color: color.$text-color-primary;
+        background-color: color.$text-color-secondary;
+      }
+    }
+  }
+}
+
+@include breakpoints.tablet-up{
+  .explore__container {
+    .explore__title {
+      font-size: font-size.$section-title-size;
+      margin-bottom: 1.5rem;
+    }
+    .explore__content {
+      font-size: font-size.$main-text-size;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+  }
+}

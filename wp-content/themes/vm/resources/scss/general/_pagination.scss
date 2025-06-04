@@ -1,0 +1,148 @@
+.pagination {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 0.5rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+
+  a, span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 45px;
+    height: 45px;
+    padding: 0.5rem 0.75rem;
+    background: #ffffff;
+    color: #333333;
+    text-decoration: none;
+    border: 2px solid #333333;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 1);
+    -moz-box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 1);
+
+    &:hover {
+      transform: translate(1px, 1px);
+      box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 1);
+      background: #f5f5f5;
+    }
+
+    &:active {
+      transform: translate(3px, 3px);
+      box-shadow: none;
+    }
+  }
+
+  // Page courante
+  .current, span.current {
+    background: #333333;
+    color: #ffffff;
+    cursor: default;
+    transform: translate(1px, 1px);
+    box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 1);
+
+    &:hover {
+      background: #333333;
+      transform: translate(1px, 1px);
+      box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 1);
+    }
+  }
+
+  // Boutons précédent/suivant
+  .prev, .next {
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+
+    &.page-numbers {
+      min-width: auto;
+    }
+  }
+
+  // Points de suspension
+  .dots {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: #666666;
+    cursor: default;
+    font-weight: bold;
+
+    &:hover {
+      background: transparent;
+      transform: none;
+      box-shadow: none;
+    }
+  }
+
+  // État désactivé pour les boutons prev/next
+  span.prev, span.next {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #f0f0f0;
+    color: #999999;
+
+    &:hover {
+      background: #f0f0f0;
+      transform: none;
+      box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+// Version responsive
+@media (max-width: 768px) {
+  .pagination {
+    gap: 0.3rem;
+    margin: 2rem 0;
+
+    a, span {
+      min-width: 40px;
+      height: 40px;
+      font-size: 0.8rem;
+      box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 1);
+
+      &:hover {
+        transform: translate(1px, 1px);
+        box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 1);
+      }
+
+      &:active {
+        transform: translate(2px, 2px);
+      }
+    }
+
+    .current {
+      transform: translate(1px, 1px);
+      box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 1);
+    }
+
+    .prev, .next {
+      padding: 0.4rem 0.8rem;
+    }
+  }
+}
+
+// Version compacte pour très petits écrans
+@media (max-width: 480px) {
+  .pagination {
+    .prev, .next {
+      span {
+        display: none;
+      }
+
+      &::before {
+        content: '‹';
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      &.next::before {
+        content: '›';
+      }
+    }
+  }
+}
