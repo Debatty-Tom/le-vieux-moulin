@@ -1,0 +1,68 @@
+@use '../settings/colors' as color;
+@use '../settings/breakpoints' as breakpoint;
+
+input[id="burger"] {
+  appearance: none;
+  position: absolute;
+  right: 0;
+  margin: 0;
+  display: inline-block;
+  min-width: 30px;
+  min-height: 30px;
+  cursor: pointer;
+  z-index: 11;
+
+  body:has(&:checked) {
+    overflow: hidden;
+  }
+
+  &:checked ~ .nav__container {
+    position: fixed;
+    transform: translateX(0);
+  }
+
+  &:checked ~ .burger__wrapper span:nth-child(2) {
+    min-height: 0;
+  }
+
+  &:checked ~ .burger__wrapper span:nth-child(1) {
+    transform: translate(0, 6px) rotate(45deg);
+
+  }
+
+  &:checked ~ .burger__wrapper span:nth-child(3) {
+    transform: translate(0, -6px) rotate(-45deg);
+  }
+}
+
+.burger__wrapper {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  z-index: 10;
+
+  & > span {
+    display: inline-block;
+    width: 25px;
+    min-height: 2px;
+    background-color: color.$text-color-secondary;
+    transition: .3s;
+  }
+
+  & > span:nth-child(2) {
+    width: 20px;
+  }
+}
+
+@include breakpoint.desktop-up {
+  input[id="burger"] {
+    display: none;
+  }
+
+  .burger__wrapper {
+    display: none;
+  }
+}
