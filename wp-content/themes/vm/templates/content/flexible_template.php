@@ -3,7 +3,16 @@
 <?php $subline = get_sub_field('subline') ?>
 <?php $text = get_sub_field('text') ?>
 <?php $section_id = dw_get_section_id($headline) ?>
-<?php $media_position = get_sub_field('gallery_position') ?>
+<?php if (!empty($media_type) && $media_type === 'text-gallery'){
+    $media_position = get_sub_field('gallery_position');
+} elseif (!empty($media_type) && $media_type === 'text-image'){
+    $media_position = get_sub_field('image_position');
+} elseif (!empty($media_type) && $media_type === 'text-flexible'){
+    $media_position = get_sub_field('flexible_position');
+} else{
+    $media_position = "";
+}
+?>
 
 <section class="text-media <?php if ($media_position === 'center'): echo 'text-media__center'; endif; ?>"
     <?php if (!empty($section_id)): ?>
@@ -29,7 +38,7 @@
             </p>
         <?php endif; ?>
         <?php if (isset($text) && $text !== ''): ?>
-            <div class="text-media__content-text">
+            <div class="text-media__content-text wysiwyg">
                 <?= $text ?>
             </div>
         <?php endif; ?>
