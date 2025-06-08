@@ -54,7 +54,9 @@ $current_filter = isset($_GET['filter']) ? sanitize_text_field($_GET['filter']) 
 
                     <div class="cards-grid">
                         <?php while ($posts_query->have_posts()): $posts_query->the_post(); ?>
-                            <?php get_template_part('parts/pedagogical', 'card'); ?>
+                            <?php get_template_part('parts/pedagogical', 'card', [
+                                'archive_taxonomy_link' => get_term_link($term->term_taxonomy_id),
+                            ]); ?>
                         <?php endwhile; ?>
                     </div>
                 </section>
