@@ -44,12 +44,7 @@
     padding: 1em;
     font-size: 1.2em;
     color: colors.$text-color-secondary;
-
-    &--dropdown {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
+    gap: .3em;
 
     &:after {
       content: '';
@@ -96,12 +91,6 @@
     &--dropdown {
       position: relative;
       order: 2;
-
-      .nav__link--dropdown {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
 
       &:hover,&:focus-within {
         .nav__dropdown {
