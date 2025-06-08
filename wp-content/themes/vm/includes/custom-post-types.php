@@ -14,7 +14,7 @@ function create_houses()
         'rewrite' => [
             'slug' => 'maisons',
         ],
-        'supports' => ['title', 'excerpt', 'editor', 'thumbnail'],
+        'supports' => ['title', 'excerpt', 'thumbnail'],
     ]);
 }
 

@@ -4,7 +4,7 @@
 
 // Sans recadrage :
 add_image_size('logo', 83, 64);
-add_image_size('card', 600, 300);
+add_image_size('card', 450, 200, true);
 add_image_size('text-image', 650, 650);
 
 // 1. Charger un fichier "public" (asset/image/css/script/...) pour le front-end sans que cela ne s'applique à l'admin.

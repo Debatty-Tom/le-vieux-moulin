@@ -27,7 +27,7 @@
                     <ul class="footer__list list">
                         <?php foreach (dw_get_navigation_links('footer') as $link): ?>
                             <li class="list__item">
-                                <a href="<?= $link->url ?>" class="list__link underline"
+                                <a href="<?= $link->href ?>" class="list__link underline"
                                    title="Vers la page <?= $link->label ?>">
                                     <?= $link->label ?>
                                 </a>

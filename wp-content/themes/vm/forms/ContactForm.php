@@ -52,7 +52,7 @@ class ContactForm
         ]);
         // Envoyer un mail de notification.
         wp_mail(
-            to: get_site_option('options_email', 'tom.debatty@hotmail.be'),
+            to: 'tom.debatty@hotmail.be', //get_site_option('options_email'),
             subject: 'Nouveau message de contact',
             message: $this->generateEmailContent($data),
         );
@@ -130,5 +130,4 @@ class ContactForm
             . '----' . PHP_EOL
             . 'Adresse mail: ' . $data['email'];
     }
-
 }
