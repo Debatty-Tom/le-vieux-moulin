@@ -74,7 +74,7 @@
                         </div>
                         <div class="field__container field__container--full">
                             <label for="message" class="field__label"><?= __hepl('Message') ?></label>
-                            <textarea name="message" id="message" class="field__textarea" cols="30" rows="10"
+                            <textarea name="message" id="message" class="field__textarea" cols="10" rows="10"
                                       placeholder="<?= __hepl("J'aurais un projet à vous présenter...") ?>"><?= $_SESSION['old']['message'] ?? '' ?></textarea>
                             <?php if (isset($errors['message'])): ?>
                                 <p class="field__error"><?= $errors['message']; ?></p>
