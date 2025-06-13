@@ -15,27 +15,72 @@
                     <?php dw_get_social_links(); ?>
                 </ul>
             </div>
-            <div class="footer__container--nav">
-                <ul>
-
-                </ul>
-                <ul>
-
-                </ul>
-                <nav class="footer__nav">
-                    <h3 class="footer__subtitle">Navigation</h3>
-                    <ul class="footer__list list">
-                        <?php foreach (dw_get_navigation_links('footer') as $link): ?>
+            <article class="footer__container--links">
+                <h3 class="footer__subtitle">Liens importants</h3>
+                <ul class="list">
+                    <?php
+                    if (have_rows('important_links', 'option')): ?>
+                        <?php while (have_rows('important_links', 'option')): the_row();
+                            $link = get_sub_field('link'); ?>
                             <li class="list__item">
-                                <a href="<?= $link->href ?>" class="list__link underline"
-                                   title="Vers la page <?= $link->label ?>">
-                                    <?= $link->label ?>
+                                <a href="<?= $link['url'] ?>" class="list__link"
+                                   title="Vers la page <?= $link['title'] ?>">
+                                    <?= $link['title'] ?>
                                 </a>
                             </li>
-                        <?php endforeach; ?>
-                    </ul>
-                </nav>
-            </div>
+                        <?php endwhile;
+                    endif;
+                    ?>
+                </ul>
+            </article>
+            <article class="footer__container--support">
+                <h3 class="footer__subtitle"><?= __hepl('Nous soutenir') ?></h3>
+                <?php if (have_rows('support', 'option')): ?>
+                    <?php while (have_rows('support', 'option')):
+                        the_row(); ?>
+                        <div class="footer__subcontainer--support">
+                            <div class="footer__support__links">
+                                <p>
+                                    <?= get_sub_field('support_text') ?>
+                                </p>
+                                <?php $link = get_sub_field('link'); ?>
+                                <?php if (have_rows('support_links', 'option')): ?>
+                                <ul class="footer__list">
+                                    <?php while (have_rows('support_links', 'option')): the_row();
+                                        $link = get_sub_field('link'); ?>
+                                        <li class="list__item">
+                                            <a href="<?= $link['url'] ?>" class="button"
+                                               title="Vers la page <?= $link['title'] ?>">
+                                                <?= $link['title'] ?>
+                                            </a>
+                                        </li>
+                                    <?php endwhile;
+                                    endif; ?>
+                                </ul>
+                            </div>
+                            <div class="footer__support__code">
+                                <p>
+                                    <?= __hepl('Vous pouvez aussi faire un don fincancier à l’aide de ce QRcode') ?>
+                                </p>
+                                <?= wp_get_attachment_image(get_sub_field('support_code')['id'], 'qrcode', false, ['class' => 'footer__support__code--image']); ?>
+                            </div>
+                        </div>
+                    <?php endwhile;
+                endif; ?>
+            </article>
+            <nav class="footer__nav">
+                <h3 class="footer__subtitle">Navigation</h3>
+                <ul class="footer__list list">
+                    <?php foreach (dw_get_navigation_links('footer') as $link): ?>
+                        <li class="list__item">
+                            <a href="<?= $link->href ?>" class="list__link underline"
+                               title="Vers la page <?= $link->label ?>">
+                                <?= $link->label ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </nav>
         </div>
         <div class="footer__lower juridic">
             <ul class="juridic__container">
