@@ -42,7 +42,7 @@ $current_filter = isset($_GET['filter']) ? sanitize_text_field($_GET['filter']) 
                 <?php if ($posts_query->have_posts()): ?>
                     <section class="taxonomy-section" data-animation="show-up" data-taxonomy="<?= esc_attr($term->slug) ?>">
                         <div class="section__header">
-                            <h2 class="section__title"><?= esc_html($term->name) ?></h2>
+                            <h3 class="section__title"><?= esc_html($term->name) ?></h3>
                             <?php if ($posts_query->found_posts > 3): ?>
                                 <a href="<?= esc_url(get_post_type_archive_link('pedagogical_tools')) . '?filter=' . $term->slug; ?>"
                                    class="button button--outline">

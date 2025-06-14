@@ -6,7 +6,7 @@
     <section class="contact" data-animation="show-up">
         <h2 class="sro"><?= __hepl('Formulaire de contact') ?></h2>
         <article class="cordcontact">
-            <h2 class="cordcontact__title section__title"><?= __hepl('Nos informations de contact') ?></h2>
+            <h3 class="cordcontact__title section__title"><?= __hepl('Nos informations de contact') ?></h3>
             <div class="cordcontact__content"><?= get_field('contact_text') ?></div>
             <dl class="cordcontact__container info">
                 <?php

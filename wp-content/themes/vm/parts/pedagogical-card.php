@@ -9,7 +9,7 @@ $link = $args['archive_taxonomy_link'] ?? get_the_permalink();
         <?= get_the_post_thumbnail(get_the_ID(), 'card'); ?>
     </figure>
     <div class="card__content">
-        <h3 class="card__title"><?= $title ?></h3>
+        <h4 class="card__title"><?= $title ?></h4>
         <p class="card__description"><?= get_the_excerpt() ?></p>
     </div>
 </article>
