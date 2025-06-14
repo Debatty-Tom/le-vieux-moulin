@@ -1,0 +1,102 @@
+@use '../settings/breakpoints' as breakpoints;
+@use '../settings/colors' as color;
+@use '../settings/font-sizes' as font-sizes;
+
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 0 auto 4rem auto;
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: color.$text-color-secondary;
+    text-align: center;
+    line-height: 1.2;
+    margin: auto;
+  }
+
+  &__image {
+    width: 100%;
+    min-width: 400px;
+    max-width: 500px;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    margin: auto;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__author {
+    font-size: 1rem;
+    color: color.$text-color-secondary;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &__date {
+    font-size: 0.875rem;
+    color: color.$text-color-secondary;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+
+  &__content {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: color.$text-color-secondary;
+  }
+}
+
+@include breakpoints.tablet-up {
+  .article {
+    padding: 3rem 2rem;
+    gap: 3rem;
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__container {
+      gap: 1.5rem;
+      max-width: 80%;
+      margin: auto;
+    }
+
+    &__image {
+      min-width: 500px;
+      max-width: 45%;
+    }
+
+    &__date {
+      font-size: 1rem;
+    }
+
+    &__content {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@include breakpoints.text-media-up {
+  .article {
+    padding: 4rem 2rem;
+
+    &__container {
+      max-width: 60%;
+    }
+
+    &__title {
+      font-size: 3.5rem;
+    }
+  }
+}

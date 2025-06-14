@@ -1,0 +1,46 @@
+[class^="icon-"], [class*="icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  &:before {
+    font-family: 'icomoon' !important;
+    font-size: 2em;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: .3s;
+  }
+}
+
+
+.social__link__icon-facebook:before {
+  content: "\ea91";
+}
+.social__link__icon-instagram:before {
+  content: "\ea92";
+}
+.social__link__icon-whatsapp:before {
+  content: "\ea93";
+}
+.social__link__icon-youtube:before {
+  content: "\ea9d";
+}
+
+.arrow-right:after{
+  font-family: 'icomoon' !important;
+  font-size: 1em;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: .3s;
+  content: "\ea3c";
+  padding-left: 1rem;
+  vertical-align: bottom;
+}

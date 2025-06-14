@@ -1,0 +1,117 @@
+@use '../../settings/colors' as color;
+@use '../../settings/font-sizes' as font-size;
+@use '../../settings/breakpoints' as breakpoints;
+
+.footer {
+  position: relative;
+  color: color.$text-color-footer;
+
+  &__support {
+    &__links {
+      max-width: 20rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    &__code {
+      max-width: 20rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+
+      &--image {
+        margin: auto;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+  }
+
+  &__brand {
+    position: relative;
+    margin-bottom: 1em;
+
+    img {
+      width: auto;
+      border-radius: 0;
+    }
+
+  }
+
+  &__quote {
+    margin-bottom: 1.5em;
+  }
+
+  &__subtitle {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  &__container {
+    margin-bottom: 35px;
+
+    &--social {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      margin-bottom: 1.5em;
+    }
+
+    &--support {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: .5em;
+      margin-bottom: 1.5em;
+    }
+  }
+
+  &__upper {
+    margin-bottom: 2em;
+  }
+}
+
+@include breakpoints.tablet-up {
+  .footer {
+    &__container {
+      &--nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@include breakpoints.desktop-up {
+  .footer {
+    padding: 60px;
+
+    &__subcontainer {
+      &--support {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    &__upper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__container {
+      &--nav {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10em;
+      }
+    }
+  }
+}

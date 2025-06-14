@@ -1,0 +1,37 @@
+@use 'utils/reset';
+@use 'utils/helper';
+@use 'utils/burger';
+@use 'utils/normalize';
+@use 'utils/icons';
+@use 'utils/js-classes';
+
+@use 'settings/breakpoints';
+@use 'settings/colors';
+@use 'settings/var';
+@use 'settings/font-sizes';
+@use 'settings/fonts';
+
+@use 'general/footer/footer';
+@use 'general/footer/social';
+@use 'general/footer/juridic';
+@use 'general/footer/list';
+@use 'general/footer/sidebar';
+
+@use 'general/header';
+@use 'general/general';
+@use 'general/naviguation';
+@use 'general/expore-more';
+@use 'general/filter';
+@use 'general/pagination';
+@use 'general/button';
+@use 'general/wysiwyg';
+
+@use 'content/contact';
+@use 'content/about';
+@use 'content/support';
+@use 'content/actuality';
+@use 'content/pedagogical';
+
+@use 'partials/text-media';
+@use 'partials/gallery';
+@use 'partials/cards';

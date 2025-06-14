@@ -1,0 +1,14 @@
+@use '../settings/breakpoints' as breakpoint;
+@use '../settings/colors' as color;
+@use '../settings/font-sizes' as font-size;
+
+@include breakpoint.tablet{
+
+}
+
+@include breakpoint.tablet-up {
+
+}
+@include breakpoint.desktop-up {
+
+}

@@ -1,0 +1,95 @@
+@use '../settings/breakpoints' as breakpoint;
+@use '../settings/colors' as color;
+
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  background: color.$card-background-color;
+  border-radius: 1em;
+  box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.74);
+  -webkit-box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.74);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 450px;
+  max-width: 450px;
+  width: 100%;
+  margin: auto;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &__link{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    overflow: hidden;
+    top: 0;
+  }
+
+  &__content {
+    padding: 1.5rem;
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+  }
+
+  &__description {
+    color: #718096;
+    font-size: 0.9rem;
+  }
+
+  .card__status {
+    color: #374151;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+
+    &--past {
+      background-color: color.$red;
+    }
+
+    &--close {
+      background-color: color.$green;
+    }
+
+    &--future {
+      background-color: color.$blue;
+    }
+  }
+}
+
+@include breakpoint.card-up{
+  .cards-grid {
+    justify-content: flex-start;
+  }
+  .card{
+    margin: 0;
+  }
+}

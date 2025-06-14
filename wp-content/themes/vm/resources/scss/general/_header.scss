@@ -1,0 +1,18 @@
+@use '../settings/colors' as color;
+@use '../settings/font-sizes' as font-size;
+@use '../settings/breakpoints' as breakpoint;
+
+header {
+  background: color.$header-background-color;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+
+
+
+
+
+

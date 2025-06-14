@@ -1,0 +1,23 @@
+@use '../settings/breakpoints' as breakpoint;
+
+.pedagogical{
+  &__container{
+    padding: 0;
+  }
+  &__header{
+    margin: auto;
+    width: fit-content;
+  }
+  &__title{
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+@include breakpoint.tablet-up{
+    .pedagogical{
+        &__title{
+        font-size: 4rem;
+        }
+    }
+}
