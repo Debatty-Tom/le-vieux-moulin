@@ -1,0 +1,43 @@
+@use '../../settings/breakpoints' as breakpoints;
+@use '../../settings/colors' as colors;
+
+.juridic {
+  padding-top: 2em;
+  border-top: 1px solid colors.$text-color-primary;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    margin-bottom: 0.5em;
+    color: white;
+  }
+
+  &__legal > a {
+    &:before {
+      background-color: white;
+    }
+  }
+
+  &__link {
+    &--creator {
+      text-decoration: underline;
+    }
+  }
+}
+
+@include breakpoints.tablet-up {
+  .juridic {
+    &__container {
+      flex-direction: row;
+      gap: 1rem;
+    }
+
+    &__legal {
+      margin-left: auto;
+    }
+  }
+
+}

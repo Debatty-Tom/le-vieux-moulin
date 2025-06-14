@@ -1,0 +1,25 @@
+@use '../../settings/breakpoints' as breakpoints;
+@use '../../settings/colors' as colors;
+
+.social {
+  &__item {
+  }
+
+  &__link {
+    overflow: hidden;
+    width: 40px;
+    line-height: 40px;
+    border: 1px solid colors.$text-color-primary;
+    border-radius: 5px;
+    text-align: center;
+    transition: .3s;
+
+    &:hover,
+    &:focus {
+      color: colors.$text-color-primary;
+      transform: scale(1.1) rotate(5deg);
+    }
+
+
+  }
+}

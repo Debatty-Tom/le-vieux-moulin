@@ -1,0 +1,31 @@
+@use '../../settings/breakpoints' as breakpoints;
+@use '../../settings/colors' as color;
+
+.list {
+  &__link {
+    padding: 1em 0;
+    color: color.$text-color-footer;
+    display: inline-block;
+
+    &::before {
+      background-color: color.$text-color-footer;
+    }
+
+    &:hover::before {
+      color: color.$text-color-footer-hover;
+      background-color: color.$text-color-footer-hover;
+    }
+
+    &:hover {
+      color: color.$text-color-footer-hover;
+    }
+  }
+}
+
+@include breakpoints.tablet-up {
+  .list {
+    &__link {
+      padding: 0.5em 0;
+    }
+  }
+}
