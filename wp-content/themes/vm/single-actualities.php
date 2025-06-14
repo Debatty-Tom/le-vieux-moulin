@@ -3,7 +3,7 @@
 // On ouvre "la boucle" (The Loop), la structure de contrôle
 // de contenu propre à Wordpress:
 if (have_posts()): while (have_posts()): the_post(); ?>
-    <section class="article">
+    <section class="article" data-animation="show-up">
         <h2 class="article__title" data-animation="show-up"><?= get_the_title() ?></h2>
         <?= get_the_post_thumbnail(get_the_ID(), 'text-media', [
             'class' => 'article__image',
@@ -23,7 +23,7 @@ endwhile;
 else: ?>
     <p><?= __hepl('Cette actualité n’existe pas') ?>.</p>
 <?php endif; ?>
-    <section class="related">
+    <section class="related" data-animation="show-up">
         <h2 class="section__title"><?= __hepl('Autres actualités qui pourraient vous intéresser...') ?></h2>
         <div class="related__container cards-grid">
             <?php

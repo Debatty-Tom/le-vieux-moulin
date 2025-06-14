@@ -1,0 +1,18 @@
+.no-opacity {
+  opacity: 0;
+}
+
+.show-up {
+  animation: showUp 1.5s;
+}
+
+@keyframes showUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

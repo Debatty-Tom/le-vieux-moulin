@@ -19,7 +19,7 @@ if (have_posts()): while (have_posts()):
 ]);
     $index = 0;
     ?>
-    <section>
+    <section data-animation="show-up">
         <div class="section__header">
             <h2 class="section__title"><?= __hepl('Nos maisons') ?></h2>
         </div>
@@ -28,7 +28,7 @@ if (have_posts()): while (have_posts()):
             <?php $index++; ?>
             <?php $title = get_the_title(); ?>
 
-            <article class="text-media">
+            <article class="text-media" data-animation="show-up">
                 <div class="text-media__content-container">
                     <h3 class="text-media__content-headline">
                         <?= $title ?>

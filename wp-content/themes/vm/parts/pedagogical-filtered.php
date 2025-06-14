@@ -3,7 +3,7 @@ $current_filter = $args['current_filter'] ?? '';
 $filtered_term = get_term_by('slug', $current_filter, 'pedagogical_tool_type');
 ?>
 
-<section>
+<section data-animation="show-up">
     <div class="section__header">
         <h2 class="section__title"><?= esc_html($filtered_term->name) ?></h2>
     </div>

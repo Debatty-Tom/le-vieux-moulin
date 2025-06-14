@@ -10,7 +10,7 @@ endwhile;
 else: ?>
     <p><?= __hepl('Cette maison n’existe pas') ?>.</p>
 <?php endif; ?>
-    <section class="related">
+    <section class="related" data-animation="show-up">
         <h2 class="section__title"><?= __hepl('Autres maison qui pourraient vous intéresser...') ?></h2>
         <div class="related__container">
             <?php
@@ -25,7 +25,7 @@ else: ?>
                 <?php
                 $title = get_the_title();
                 ?>
-                <article class="card">
+                <article class="card" data-animation="show-up">
                     <a class="card__link" href="<?= get_the_permalink() ?>" title="lien vers <?= $title ?>"></a>
                     <figure class="card__image">
                         <?= get_the_post_thumbnail(get_the_ID(), 'card'); ?>

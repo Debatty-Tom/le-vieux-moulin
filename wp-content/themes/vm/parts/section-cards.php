@@ -28,7 +28,7 @@ if ($args['orderby'] === 'date') {
 }
 ?>
 
-<section>
+<section data-animation="show-up">
     <div class="section__header">
         <h2 class="section__title"><?= $args['section_title'] ?></h2>
         <?php if ($args['post_type'] !== 'houses'): ?>
@@ -42,7 +42,7 @@ if ($args['orderby'] === 'date') {
             $date = get_field('date');
             $title = get_the_title();
             ?>
-            <article class="card">
+            <article class="card" data-animation="show-up">
                 <a class="card__link" href="<?= get_the_permalink()?>" title="lien vers <?= $title ?>"></a>
                 <figure class="card__image">
                     <?= get_the_post_thumbnail(get_the_ID(), 'card'); ?>

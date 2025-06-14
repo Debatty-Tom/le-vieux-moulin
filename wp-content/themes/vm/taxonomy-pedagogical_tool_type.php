@@ -10,7 +10,7 @@
     if (have_posts()): while (have_posts()): the_post(); ?>
         <?php $media_position_count++ ?>
         <?php $media_position = $media_position_count % 2 === 0 ? "right" : "left"; ?>
-        <section class="text-media">
+        <section class="text-media" data-animation="show-up">
             <div class="text-media__content-container">
                 <h3 class="text-media__content-headline">
                     <?= get_the_title() ?>

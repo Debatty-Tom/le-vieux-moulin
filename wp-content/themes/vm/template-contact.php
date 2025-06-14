@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 <?php if (have_posts()): while (have_posts()):
     the_post(); ?>
-    <section class="contact">
+    <section class="contact" data-animation="show-up">
         <h2 class="sro"><?= __hepl('Formulaire de contact') ?></h2>
         <article class="cordcontact">
             <h2 class="cordcontact__title section__title"><?= __hepl('Nos informations de contact') ?></h2>

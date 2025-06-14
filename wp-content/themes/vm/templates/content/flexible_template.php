@@ -14,7 +14,7 @@
 }
 ?>
 
-<section class="text-media <?php if ($media_position === 'center'): echo 'text-media__center'; endif; ?>"
+<section data-animation="show-up" class="text-media <?php if ($media_position === 'center'): echo 'text-media__center'; endif; ?>"
     <?php if (!empty($section_id)): ?>
         id="<?= esc_attr($section_id) ?>"
     <?php endif; ?>>
