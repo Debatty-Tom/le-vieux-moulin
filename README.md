@@ -4,7 +4,7 @@ Ce projet est un site vitrine réalisé pour le **centre de vacances "Le Vieux M
 
 Retrouver le site en ligne [à cette addresse](https://vm.tomdebatty.com), 
 Retrouver la [maquette](https://www.figma.com/design/qX0TGhGGTDl6rqj4xdxTom/site-client---le-vieux-moulin?node-id=127-919&t=CiIvMwqyWmGknEp9-1), 
-[Consulter le cahier des charges](./cahier_des_charges.md)
+[Consulter le cahier des charges](./cahier-des-charges.md)
 
 ---
 
