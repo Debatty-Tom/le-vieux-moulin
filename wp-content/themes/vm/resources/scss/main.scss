@@ -15,7 +15,6 @@
 @use 'general/footer/social';
 @use 'general/footer/juridic';
 @use 'general/footer/list';
-@use 'general/footer/sidebar';
 
 @use 'general/header';
 @use 'general/general';
@@ -31,6 +30,7 @@
 @use 'content/support';
 @use 'content/actuality';
 @use 'content/pedagogical';
+@use 'content/not-found';
 
 @use 'partials/text-media';
 @use 'partials/gallery';
